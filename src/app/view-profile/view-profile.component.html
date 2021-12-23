@@ -1,25 +1,18 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Card Swip
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Card Swip</ion-title>
     </ion-toolbar>
   </ion-header>
- <ion-card *ngFor="let item of customer" [style.position]="'absolute'">
+ <ion-card *ngFor="let item of customer" >
    <img [src]="item.img"  [style.width]="'100%'">
-   <ion-card-header>
+   <div class="parallax"></div>
+   <ion-card-header  >
      <ion-card-title>{{item.name}}</ion-card-title>
      <ion-card-title>{{item.details}}</ion-card-title>
      <ion-card-title>{{item.otherdetails}}</ion-card-title>
    </ion-card-header>
-   <ion-button class="view"  routerLink="/view">view</ion-button>
+   <div class="parallax"></div>
  </ion-card>
  
 </ion-content>
