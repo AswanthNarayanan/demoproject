@@ -7,6 +7,9 @@
   top: 50%;
   transform: translateY(-50%);
 }
+ion-content{
+  --background: linear-gradient(to top, white 50%, mediumseagreen 50%);
+}
 
 #container strong {
   font-size: 20px;
@@ -30,4 +33,38 @@
     width: 30%;
     margin: 5px;
     padding: 5px;
+}
+.full{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-color: green;
+}
+ion-card{
+  bottom: 58px;
+  // box-shadow: 1px -17px 7px -5px #d7d8da;
+  .img{
+   height: 260px;
+  }
+}
+.header{
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+  margin: 5px;
+  margin-left: -37px
+}
+ion-icon{
+  margin-left: 0px;
+  margin-bottom: -2px;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
 }

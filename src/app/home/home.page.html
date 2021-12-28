@@ -1,19 +1,18 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Card Swip
+      Matrimony
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Card Swip</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="header">
+    <ion-icon name="arrow-back"></ion-icon>
+    <span>Daily Recommendations</span>
+  </div>
  <ion-card *ngFor="let item of customer" [style.position]="'absolute'">
-   <img [src]="item.img"  [style.width]="'100%'">
+   <img [src]="item.img"  [style.width]="'100%'" class="img">
    <ion-card-header>
      <ion-card-title>{{item.name}}</ion-card-title>
      <ion-card-title>{{item.details}}</ion-card-title>

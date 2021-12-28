@@ -5,14 +5,30 @@
     </ion-toolbar>
   </ion-header>
  <ion-card *ngFor="let item of customer" >
-   <img [src]="item.img"  [style.width]="'100%'">
-   <div class="parallax"></div>
-   <ion-card-header  >
-     <ion-card-title>{{item.name}}</ion-card-title>
-     <ion-card-title>{{item.details}}</ion-card-title>
-     <ion-card-title>{{item.otherdetails}}</ion-card-title>
-   </ion-card-header>
-   <div class="parallax"></div>
+   <div  id="navbar">
+    <img [src]="item.img"  [style.width]="'100%'"  class="img">
+   </div>
+   <div style="padding:15px 15px 2500px;font-size:30px;border: 1px solid #ccc;
+   border-radius: 20px;">
+    <ion-card-header >
+      <ion-card-title style="color: black;">{{item.name}}</ion-card-title>
+      <ion-card-title style="color: black;">{{item.details}}</ion-card-title>
+      <ion-card-title style="color: black;">{{item.otherdetails}}</ion-card-title>
+      <div style="color: black;font-size: 18px;margin-top: 10px;font-weight: 600;">About Me</div>
+      <div style="color: black;font-size: 16px;text-align: justify;margin-top: 17px;">
+        My name is Pragati, and I am one of the bright students of class sixth studying at RMS International School, Bangalore.
+      I am the class monitor of sixth standard and favorite to all my teachers.
+My interest lies more in singing and dancing. I love to play volleyball with my classmates and friends.
+I am the winner of last year’s Inter-school Volleyball Championship.
+I’m not only interested in cultural activities but also a sincere student in academics.
+My other hobbies are watching movies, traveling, and listening to music.
+My family consists of my mother, my father, my younger brother, and my grandparents.
+I am more close to my dad and my grandparents. I often share everything with my grandparents.
+I am very much fond of eating. My mother cooks specially for me. My favorite dishes are pastries, cakes, chocolates, and all sweets
+I like to spend the most time with my family. It is because I enjoy the company with them. Also, I learn respect, ethics, and moral values from them.
+      </div>
+    </ion-card-header>
+   </div>
  </ion-card>
  
 </ion-content>
